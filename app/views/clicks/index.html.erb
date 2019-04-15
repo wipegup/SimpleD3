@@ -1,0 +1,9 @@
+<p>Click Count:
+  <span id="click-count"><%= @clicks[0] %></span>
+</p>
+
+<%= link_to 'Click Me, JS Refresh', clicks_path, remote: true, method: :post  %>
+<br>
+<%= link_to 'Click Me, Redirect Refresh', clicks_path, remote: false, method: :post  %>
+<br>
+<svg id="circle"></svg>
